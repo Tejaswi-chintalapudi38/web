@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms_sample</title>
+</head>
+<body>
+    <form action="./submit.html" method="get" enctype="text/plain"autocomplete="off">
+        <!-- Header Fieldset -->
+        <fieldset style="border-radius:35px; padding: 10px; background-color:#e6ecff;">
+            <center>
+                <img src="https://e7.pngegg.com/pngimages/492/731/png-clipart-telangana-state-road-transport-corporation-bus-nizamabad-hyderabad-bus-label-logo.png" alt="tsrtc" width="60" height="60">
+                <h1 style="color: blue">TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+                <h1>GENERAL BUS PASS APPLICATION</h1>
+            </center>
+        </fieldset>
+
+        <!-- Applicant Details -->
+        <fieldset style="border-radius:5px; padding: 10px;">
+            <legend><b><h3>Applicant Details</h3></b></legend>
+            <center>
+                <table width="80%">
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="Name" id="name" required></td>
+                        <td><label for="fathers_name">Father's/Guardian Name:</label></td>
+                        <td><input type="text" name="fathers_name" id="fathers_name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td><input type="date" name="dob" id="dob" required></td>
+                        <td><label>Gender:</label></td>
+                        <td>
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Age As on:</label></td>
+                        <td colspan="3">
+                            <input type="text" name="years" id="Years" required style="width: 10px;"> Years
+                            <input type="text" name="months" id="Months" required style="width: 10px;"> Months
+                            <input type="text" name="days" id="Days" required style="width: 10px;"> Days
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="aadhar">Aadhar No:</label></td>
+                        <td><input type="text" name="aadhar" id="aadhar" required maxlength="12"></td>
+                        <td><label for="Whatsapp">Whatsapp No:</label></td>
+                        <td><input type="text" name="wtsp" id="Whatsapp" required maxlength="10" minlength="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" name="Email" id="email" required></td>
+                        <td><label for="photo">Photo:</label></td>
+                        <td><input type="file" name="Photo" id="photo" required multiple accept=".pdf,.docx"></td>
+                    </tr>
+                </table>
+            </center>
+        </fieldset>
+
+        <!-- Residential Address Details -->
+        <fieldset style="border-radius:5px; padding: 10px;">
+            <legend><b><h3>Residential Address Details</h3></b></legend>
+            <center>
+                <table width="80%">
+                    <tr>
+                        <td><label for="applicant_adress">Applicant Address:</label></td>
+                        <td><input type="textarea" name="applicant" id="applicant_adress" required></td>
+                        <td><label for="district">District:</label></td>
+                        <td>
+                            <select name="district" id="district">
+                                <option value="">--Select--</option>
+                                <option value="hyd">Hyderabad</option>
+                                <option value="Siddipet">Siddipet</option>
+                                <option value="Niramal">Nirmal</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mandal">Mandal:</label></td>
+                        <td>
+                            <select name="mandal" id="mandal">
+                                <option value="">--Select--</option>
+                                <option value="Ameerpet">Ameerpet</option>
+                                <option value="AsifNagar">Asif Nagar</option>
+                                <option value="Nampally">Nampally</option>
+                            </select>
+                        </td>
+                        <td><label for="village">Village:</label></td>
+                        <td>
+                            <select name="village" id="village">
+                                <option value="">--Select--</option>
+                                <option value="hyd">Hyderabad</option>
+                                <option value="Siddipet">Siddipet</option>
+                                <option value="Nirmal">Nirmal</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="pin">Pincode:</label></td>
+                        <td><input type="text" name="pin" id="pin"></td>
+                    </tr>
+                </table>
+            </center>
+        </fieldset>
+
+        <!-- Pass Details -->
+        <fieldset style="border-radius:5px; padding: 10px;">
+            <legend><b><h3>Pass Details</h3></b></legend>
+            <center>
+                <table width="80%">
+                    <tr>
+                        <td><label for="City">City:</label></td>
+                        <td>
+                            <select name="city" id="City">
+                                <option value="">--Select--</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Secunderabad">Secunderabad</option>
+                                <option value="Nampally">Nampally</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="passtype">Pass Type:</label></td>
+                        <td>
+                            <select name="passtype" id="passtype">
+                                <option value="">--Select--</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Yearly">Yearly</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </fieldset>
+
+        <!-- Payment Details -->
+        <fieldset style="border-radius:5px; padding: 10px;">
+            <legend><b><h3>Mode of Payment & Pass Collection</h3></b></legend>
+            <center>
+                <table width="80%">
+                    <tr>
+                        <td><label for="Payment">Payment Mode:</label></td>
+                        <td>
+                            <select name="payment" id="Payment">
+                                <option value="">--Select--</option>
+                                <option value="Online">Online</option>
+                                <option value="Cash">Cash</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="delivery">Pass Delivery Mode:</label></td>
+                        <td>
+                            <select name="delivery" id="delivery">
+                                <option value="">--Select--</option>
+                                <option value="Online">Online</option>
+                                <option value="cod">COD</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="center">Center to Collect Pass:</label></td>
+                        <td>
+                            <select name="center" id="center">
+                                <option value="ABIDS">RTC ABIDS--HYD (22-07-2025)</option>
+                                <option value="Airport">RTC AIRPORT--HYD (21-07-2025)</option>
+                                <option value="CBS">RTC CBS--HYD (21-07-2025)</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </fieldset>
+
+        <!-- Submit Button -->
+         <br>
+        <center>
+            <img src = "C:\Users\3410\Documents\captcha.jpg" alter ="captcha" width="15%">
+            <br>
+            <input type="text" name="captcha" width="90px">
+            <br><br>
+            <input type="submit" value="Submit">
+        </center>
+    </form>
+</body>
+</html>
